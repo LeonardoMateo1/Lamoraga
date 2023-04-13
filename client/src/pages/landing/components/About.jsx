@@ -15,7 +15,7 @@ const About = () => {
             </div>
             <div className='absolute flex items-center justify-center w-full h-full gap-10 font-serif'>
                 <div className='flex flex-col text-right items-end gap-10 w-[40rem]'>
-                    <p className='text-6xl font-semibold text-primary '>About Us</p>
+                    <h2 className='text-6xl font-semibold text-primary '>About Us</h2>
                     <img src={spoon} alt="" className='w-10 rotate-180 '/>
                     <p className='font-sans'>Lamoraga is a culinary concept that seeks the highest level of quality and taste, in order to offer its cuisine as a convenient luxury.</p>
                     <Link to='/History'><button className='px-[32px] py-2 mt-3 text-base font-bold text-black bg-primary'>Our Journey</button></Link>
@@ -24,7 +24,7 @@ const About = () => {
                     <img src={knife} alt="knife" />
                 </div>
                 <div className='flex flex-col text-left gap-10 w-[40rem]'>
-                    <p className='font-semibold text-primary text-[64px]'>Our History</p>
+                    <h2 className='font-semibold text-primary text-[64px]'>Our History</h2>
                     <img src={spoon} alt="" className='w-10'/>
                     <p className='font-sans'>The idea of Lamoraga started not too long ago in Andalusia, the Spanish region that covers most of the southern part of the Iberian Peninsula.</p>
                     <Link to='/History'><button className='px-[32px] py-2 mt-3 text-base font-bold text-black bg-primary'>Our Journey</button></Link>

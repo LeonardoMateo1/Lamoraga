@@ -6,6 +6,8 @@ import Footer from '../Footer'
 import spoon from '../../assets/spoon.png'
 import bg from '../../assets/abt-hero.webp'
 import About from './components/About';
+import Menu from './components/Menu';
+import OpenTable from './components/OpenTable';
 
 const LandingPage = () => {
   return (
@@ -24,7 +26,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div className='relative hidden md:block'>
-            <img src={bg} alt="bg-hero" className='object-cover w-full h-screen ' />
+            <img src={bg} alt="bg-hero" className='background-image' />
             <div className='absolute flex items-center justify-center w-full h-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'>
               <div className='flex flex-col items-center w-[80%]'>
                 <h1 className='font-serif font-bold lg:tracking-[0.04em] text-spirit text-[70px] lg:text-7xl whitespace-nowrap break-normal'>The Key to Fine Dining</h1>
@@ -34,6 +36,8 @@ const LandingPage = () => {
           </div>
         </div>
         <About/>
+        <OpenTable/>
+        <Menu/>
     </div>
   )
 }
