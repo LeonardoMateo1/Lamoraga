@@ -9,6 +9,8 @@ import About from './components/About';
 import Menu from './components/Menu';
 import OpenTable from './components/OpenTable';
 import DrinkSpecials from './components/DrinkSpecials';
+import Owner from './components/Owner';
+import Testimonials from './components/Testimonials';
 
 const LandingPage = () => {
   return (
@@ -40,6 +42,8 @@ const LandingPage = () => {
         <OpenTable/>
         <Menu/>
         <DrinkSpecials/>
+        <Owner/>
+        <Testimonials/>
     </div>
   )
 }
