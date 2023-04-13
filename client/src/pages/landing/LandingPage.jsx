@@ -5,10 +5,11 @@ import Hours from '../toolbar/Hours'
 import Footer from '../Footer'
 import spoon from '../../assets/spoon.png'
 import bg from '../../assets/abt-hero.webp'
+import About from './components/About';
 
 const LandingPage = () => {
   return (
-    <div className='h-[150vh]'>
+    <div>
         <Nav/>
         <Hours/>
         <Footer/>
@@ -32,6 +33,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+        <About/>
     </div>
   )
 }
