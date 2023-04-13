@@ -11,6 +11,9 @@ import OpenTable from './components/OpenTable';
 import DrinkSpecials from './components/DrinkSpecials';
 import Owner from './components/Owner';
 import Testimonials from './components/Testimonials';
+import Awards from './components/Awards';
+import Blog from './components/Blog';
+import Gallery from './components/Gallery';
 
 const LandingPage = () => {
   return (
@@ -44,6 +47,9 @@ const LandingPage = () => {
         <DrinkSpecials/>
         <Owner/>
         <Testimonials/>
+        <Awards/>
+        <Blog/>
+        <Gallery/>
     </div>
   )
 }

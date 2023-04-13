@@ -43,7 +43,7 @@ const Testimonials = () => {
             <p className='font-bold text-[23px]'>Testimonials</p>
             <img src={spoon} alt="" />
             <p className='text-6xl font-semibold text-spirit leading-[130%]'>Happy Customers</p>
-            <div class="grid grid-cols-2 w-[80%] gap-10">
+            <div className="grid grid-cols-2 w-[80%] gap-10">
                 {
                     reviews.map(({id, review, name, job, img}) => {
                         return (
