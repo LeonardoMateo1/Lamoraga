@@ -23,3 +23,15 @@
     background-color: black;
   }
 }
+
+@layer utilities {
+  .link {
+    @apply relative
+  }
+  .link::after {
+    @apply content-[''] bg-primary h-[2px] w-0 left-0 -bottom-0 rounded-xl absolute duration-300
+  }
+  .link:hover::after {
+    @apply w-full
+  }
+}
