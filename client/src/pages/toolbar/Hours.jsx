@@ -1,6 +1,6 @@
 import React from 'react'
-import MapLink from './MapLink'
-import PhoneLink from './PhoneLink'
+import MapLink from './components/MapLink'
+import PhoneLink from './components/PhoneLink'
 
 const Hours = () => {
     

@@ -22,7 +22,7 @@ const Nav = () => {
 
     return (
         <nav className='tool-bar'>
-            <ul className='flex flex-col items-center justify-around w-full gap-4 pt-6 pb-8 bg-black md:flex-row'>
+            <ul className='flex flex-col items-center justify-around w-full gap-4 pt-6 pb-8 md:flex-row'>
                 <li className='sm:text-3xl lg:text-5xl'><img src={logo} alt="logo"/></li>
                 <li className='hidden font-normal lg:flex gap-7 white'>
                     <p className='link'><Link to='/'>Home</Link></p>
