@@ -20,7 +20,7 @@ const LandingPage = () => {
     <div>
         <Nav/>
         <Hours/>
-        <Footer/>
+        
         <div>
           <div className='flex md:hidden items-center justify-center h-screen gap-[7rem] font-serif mb-20 xl:mb-10 '>
             <div className='flex flex-col w-full gap-5 ml-10 md:w-[30rem]'>
@@ -50,6 +50,7 @@ const LandingPage = () => {
         <Awards/>
         <Blog/>
         <Gallery/>
+        <Footer/>
     </div>
   )
 }

@@ -34,6 +34,7 @@ module.exports = {
         "wheat" : '#f5deb3',
         'categories': '#242424',
         "cat-text": '#AAAAAA',
+        'line': '#ffff',
       },
       fontFamily: {
         times: ['Times New Roman', 'Times', 'serif']
