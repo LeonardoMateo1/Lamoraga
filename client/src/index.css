@@ -6,9 +6,16 @@
 
 @layer base {
   html {
-      @apply text-white bg-black;
+      @apply text-white bg-bg;
       font-family: 'Open Sans', sans-serif;
       line-height: 175%;
+  }
+}
+
+@layer base {
+  h5 {
+    line-height: 130%;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -20,7 +27,7 @@
     justify-content: center;
     align-items: center;
     z-index: 10;
-    background-color: black;
+    background-color: #040404;
   }
 }
 

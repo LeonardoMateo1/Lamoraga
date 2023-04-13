@@ -8,6 +8,7 @@ import bg from '../../assets/abt-hero.webp'
 import About from './components/About';
 import Menu from './components/Menu';
 import OpenTable from './components/OpenTable';
+import DrinkSpecials from './components/DrinkSpecials';
 
 const LandingPage = () => {
   return (
@@ -38,6 +39,7 @@ const LandingPage = () => {
         <About/>
         <OpenTable/>
         <Menu/>
+        <DrinkSpecials/>
     </div>
   )
 }
