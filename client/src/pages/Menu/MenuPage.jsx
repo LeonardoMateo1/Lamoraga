@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { useLocation } from 'react-router-dom';
 import Footer from '../Footer';
 import Hours from '../toolbar/Hours'
 import bg from "../../assets/event-hero.webp";
@@ -1083,10 +1084,12 @@ const End_Of_Bin_Red = [
 
 const MenuPage = () => {
 
+    const location = useLocation();
+    const menu = location.state?.menu || 'default';
 
-    const [isTapasOpen, setIsTapasOpen] = useState(true);
+    const [isTapasOpen, setIsTapasOpen] = useState(false);
     const [isSoupsSaladsOpen, setIsSoupsSaladsOpen] = useState(false);
-    const [isDinnerOpen, setIsDinnerOpen] = useState(false);
+    const [isDinnerOpen, setIsDinnerOpen] = useState(true);
     const [isVeganOpen, setIsVeganOpen] = useState(false);
     const [isHappyHourOpen, setIsHappyHourOpen] = useState(false);
     const [isDrinksOpen, setIsDrinksOpen] = useState(false);
@@ -1122,12 +1125,12 @@ const MenuPage = () => {
             </div>
             <div className='m-[auto] font-serif w-[80%] '>
                 <div className='flex items-center justify-around text-spirit text-[10px] gap-1 lg:text-[23px] font-bold mb-10'>
-                    <button className={`${isTapasOpen ? 'bg-spirit text-black' : 'bg-menu'} h:bg-spirit lg:px-10 lg:py-2 px-2 py-3`} onClick={() => handleMenu('tapas')}>Tapas</button>
-                    <button className={`${isSoupsSaladsOpen ? 'bg-spirit text-black' : 'bg-menu'} h:bg-spirit lg:px-10 lg:py-2 px-2 py-1`} onClick={() => handleMenu('soupsSalads')}>Soups & Salads</button>
-                    <button className={`${isDinnerOpen ? 'bg-spirit text-black' : 'bg-menu'} h:bg-spirit lg:px-10 lg:py-2 px-2 py-3`} onClick={() => handleMenu('dinner')}>Dinner</button>
-                    <button className={`${isVeganOpen ? 'bg-spirit text-black' : 'bg-menu'} h:bg-spirit lg:px-10 lg:py-2 px-2 py-3`} onClick={() => handleMenu('vegan')}>Vegan</button>
-                    <button className={`${isHappyHourOpen ? 'bg-spirit text-black' : 'bg-menu'} h:bg-spirit lg:px-10 lg:py-2 px-2 py-1`} onClick={() => handleMenu('happyHour')}>Happy Hour</button>
-                    <button className={`${isDrinksOpen ? 'bg-spirit text-black' : 'bg-menu'} h:bg-spirit lg:px-10 lg:py-2 px-2 py-3`} onClick={() => handleMenu('drinks')}>Drinks</button>
+                    <button className={`${isTapasOpen ? 'bg-spirit text-black underline' : 'bg-menu'} h:bg-spirit lg:px-10 lg:py-2 px-2 py-3`} onClick={() => handleMenu('tapas')}>Tapas</button>
+                    <button className={`${isSoupsSaladsOpen ? 'bg-spirit text-black underline' : 'bg-menu'} h:bg-spirit lg:px-10 lg:py-2 px-2 py-1`} onClick={() => handleMenu('soupsSalads')}>Soups & Salads</button>
+                    <button className={`${isDinnerOpen ? 'bg-spirit text-black underline' : 'bg-menu'} h:bg-spirit lg:px-10 lg:py-2 px-2 py-3`} onClick={() => handleMenu('dinner')}>Dinner</button>
+                    <button className={`${isVeganOpen ? 'bg-spirit text-black underline' : 'bg-menu'} h:bg-spirit lg:px-10 lg:py-2 px-2 py-3`} onClick={() => handleMenu('vegan')}>Vegan</button>
+                    <button className={`${isHappyHourOpen ? 'bg-spirit text-black underline' : 'bg-menu'} h:bg-spirit lg:px-10 lg:py-2 px-2 py-1`} onClick={() => handleMenu('happyHour')}>Happy Hour</button>
+                    <button className={`${isDrinksOpen ? 'bg-spirit text-black underline' : 'bg-menu'} h:bg-spirit lg:px-10 lg:py-2 px-2 py-3`} onClick={() => handleMenu('drinks')}>Drinks</button>
                 </div>
                 <div className={`${isTapasOpen ? '' : 'hidden'} w-full flex justify-center flex-col`}>
                     <div className=''>
@@ -1360,9 +1363,9 @@ const MenuPage = () => {
                 </div>
                 <div className={`${isDrinksOpen ? '' : 'hidden'}`}>
                     <div className='flex flex-row justify-around mt-3 font-bold text-spirit text-[10px] lg:text-[23px] mb-10'>
-                        <button onClick={() => handleDrinkMenu('cocktail')} className={`${isCocktailsOpen ? 'bg-spirit text-black' : 'bg-menu'} h:bg-spirit lg:px-10 lg:py-2 px-2 py-1`}>Cocktails & Beer</button>
-                        <button onClick={() => handleDrinkMenu('winebtg')} className={`${isWineBTGOpen ? 'bg-spirit text-black' : 'bg-menu'} h:bg-spirit lg:px-10 lg:py-2 px-2 py-1`}>Wine BTG</button>
-                        <button onClick={() => handleDrinkMenu('wine')} className={`${isWineOpen ? 'bg-spirit text-black' : 'bg-menu'} h:bg-spirit lg:px-10 lg:py-2 px-2 py-1`}>Wine</button>
+                        <button onClick={() => handleDrinkMenu('cocktail')} className={`${isCocktailsOpen ? 'bg-spirit text-black underline' : 'bg-menu'} h:bg-spirit lg:px-10 lg:py-2 px-2 py-1`}>Cocktails & Beer</button>
+                        <button onClick={() => handleDrinkMenu('winebtg')} className={`${isWineBTGOpen ? 'bg-spirit text-black underline' : 'bg-menu'} h:bg-spirit lg:px-10 lg:py-2 px-2 py-1`}>Wine BTG</button>
+                        <button onClick={() => handleDrinkMenu('wine')} className={`${isWineOpen ? 'bg-spirit text-black underline' : 'bg-menu'} h:bg-spirit lg:px-10 lg:py-2 px-2 py-1`}>Wine</button>
                     </div>
                     <div className={`${isCocktailsOpen ? '' : 'hidden'}`}>
                         <div className=''>

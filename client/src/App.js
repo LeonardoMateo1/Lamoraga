@@ -6,6 +6,8 @@ import BlogPage from "./pages/Blog/BlogPage";
 import ViewBlog from "./pages/Blog/ViewBlog";
 import ContactPage from "./pages/Contact/ContactPage";
 import History from "./pages/About/History";
+import GiftCards from "./pages/GiftCards";
+import Edit from "./pages/Edit/Edit";
 
 
 
@@ -21,6 +23,8 @@ function App() {
           <Route path='/Blog_Post/:id' element={<ViewBlog/>}/>
           <Route path="/Contact_Us" element={<ContactPage/>}/>
           <Route path='/History' element={<History/>}/>
+          <Route path='/Gift_Cards' element={<GiftCards/>}/>
+          <Route path='/Blog/Edit/305131' element={<Edit/>}/>
         </Routes>
       </div>
     </BrowserRouter>

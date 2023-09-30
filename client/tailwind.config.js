@@ -35,11 +35,18 @@ module.exports = {
         'categories': '#242424',
         "cat-text": '#AAAAAA',
         'line': '#ffff',
+        'insta': '#C4C4C4',
+      },
+      textDecorationColor: {
+        'primary': '#AC1F2D',
       },
       fontFamily: {
         times: ['Times New Roman', 'Times', 'serif']
       }
     },
+  },
+  variants: {
+    textDecorationColor: ['responsive'],
   },
   plugins: [],
 }

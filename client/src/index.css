@@ -44,6 +44,18 @@
 }
 
 @layer utilities {
+  .link-m {
+    @apply relative
+  }
+  .link-m::after {
+    @apply content-[''] bg-primary h-[4px] w-0 left-0 -bottom-0 rounded-xl absolute duration-300
+  }
+  .link-m:hover::after {
+    @apply w-full
+  }
+}
+
+@layer utilities {
   .background-image {
     object-fit: cover;
     width: 100%;

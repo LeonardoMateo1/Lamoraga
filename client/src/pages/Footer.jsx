@@ -25,15 +25,14 @@ const Footer = () => {
           </div>
         </div>
         <div className='absolute flex flex-col gap-[5rem] lg:gap-[20rem] mt-40 text-neutral-400 items-center justify-center lg:flex-row w-[80%] bottom-[10rem] lg:bottom-[15rem] '>
-          <div className='flex flex-col items-center justify-center gap-2'>
+          <div className='flex flex-col items-center justify-center gap-2 leading-[175%] text-center'>
             <p className='font-serif text-[32px] mb-2'>Contact Us</p>
-            <p>3936 North Tamiami Trail</p>
-            <p>Naples, Florida 34103</p>
-            <p>(239) 331-3669</p>
+            <p className='w-[80%] 2xl:w-full text-[12px] xl:[14px] 2xl:text-base'>3936 North Tamiami Trail Naples, Florida 34103</p>
+            <p className='text-[12px] xl:[14px] 2xl:text-base'>(239) 331-3669</p>
           </div>
           <div className='flex flex-col items-center justify-center gap-3'>
             <p className='text-primary text-[40px] lg:text-[64px] font-serif font-bold leading-[130%]'>LAMORAGA</p>
-            <p className='w-full text-center text-[12px] lg:text-base'>"The best way to find yourself is to lose yourself in the service of others.”</p>
+            <p className='w-full text-center text-[12px] xl:[14px] 2xl:text-base'>"The best way to find yourself is to lose yourself in the service of others.”</p>
             <img src={gold_spoon} alt="gold-spoon" />
             <div className='flex text-white text-[1.5rem]'>
               <a href="https://www.facebook.com/LamoragaNaples"><FaFacebookF/></a>

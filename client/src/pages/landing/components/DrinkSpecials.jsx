@@ -99,7 +99,7 @@ const DrinkSpecials = () => {
                                         <div className='flex items-center justify-between gap-3 font-bold text-spirit text-[23px]'>
                                             <h5 className='text-[23px]'>{name}</h5>
                                             <div className='flex items-center justify-center gap-2'>
-                                                <div className='w-[90px] h-[1px] bg-spirit'></div>
+                                                <div className='w-[90px] h-[1px] bg-line'></div>
                                                 <h5 className='text-white text-[1.6rem] font-bold'>${price}</h5>
                                             </div>
                                         </div>
@@ -126,7 +126,7 @@ const DrinkSpecials = () => {
                                         <div className='flex items-center justify-between gap-3 font-bold text-spirit text-[23px]'>
                                             <h5 className='text-[23px]'>{name}</h5>
                                             <div className='flex items-center gap-2'>
-                                                <div className='w-[90px] h-[1px] bg-spirit'></div>
+                                                <div className='w-[90px] h-[1px] bg-line'></div>
                                                 <h5 className='text-white text-[1.6rem]'>${price}</h5>
                                             </div>
                                         </div>
